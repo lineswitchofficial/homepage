@@ -4,6 +4,7 @@
     --hover-color: black;
 }
 
+
 body {
     margin: 0;
     font-family: 'Noto Sans KR';
@@ -15,11 +16,12 @@ a {
 }
 
 .loading span {
-    display: inline-block;
-    color: var(--text-color);
-    margin: 0 -.05em;
-    align-items: center;
-    animation: loading 2.6s infinite alternate;
+  display: inline-block;
+  color: var(--text-color);
+  margin: 0 -.05em;
+  align-items: center;
+  animation: loading 2.6s infinite alternate;
+
   }
   .loading span:nth-child(2) {
     animation-delay: .2s;
@@ -70,6 +72,7 @@ a {
       opacity: .2;
     }
   }
+
 div.stop-dragging
 {
   -ms-user-select: none; 
@@ -146,13 +149,29 @@ div.stop-dragging
 
 .discordwidget {
     width: auto;
-    height: 70%;
+    height: 100%;
+}
+
+.introducevideo {
+    position: absolute;
 }
 
 .projecthome {
     background-color: #242424;
     align-items: center;
     user-select: none;
+}
+
+.aboutlineswitch {
+  position: static;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.contacthover :hover{
+  background-color: white;
+  color: black;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
