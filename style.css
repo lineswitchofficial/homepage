@@ -1,0 +1,131 @@
+:root {
+    --text-color: white;
+    --background-color: #323232;
+    --hover-color: black;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans KR';
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+div.stop-dragging
+{
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 8px 12px;
+    margin: 0px 0px 0px 0px;
+}
+
+.navbar_logo {
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.navbar_menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_menu li {
+    padding: 8px 12px;
+}
+
+.navbar_menu li:hover {
+    background-color: var(--hover-color);
+    border-radius: 20px;
+}
+
+.navbar_icons {
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar_icons li {
+    padding: 8px 12px;
+}
+
+.navbar_togglebtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: white;
+}
+
+.footercopyright {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+	padding: 15px 0;
+    text-align: center;
+}
+
+.mainhomepage {
+    background-color: #242424;
+}
+
+.projecthome {
+    background-color: #242424;
+    align-items: center;
+    user-select: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .navbar_icons {
+        display: none;
+        justify-content: center;
+        width: 100%
+    }
+
+    .navbar_togglebtn {
+        display: block;
+    }
+
+    .navbar_menu.active,
+    .navbar_icons.active {
+        display: flex;
+    }
+
+
+}
