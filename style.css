@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'arcamajora3-bold';
+  src: url(fonts/ArcaMajora3-Bold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'arcamajora3-heavy';
+  src: url(fonts/ArcaMajora3-Heavy.otf) format('opentype');
+}
+
 :root {
     --text-color: white;
     --background-color: #323232;
@@ -7,10 +17,13 @@
 
 html,body {
     margin: 0;
-    font-family: 'Noto Sans KR';
     padding:0;
     height:100%;
     width:100%; height:100%;
+}
+
+.homebody {
+  font-family: 'arcamajora3-heavy';
 }
 
 .wrapper{
@@ -18,8 +31,8 @@ html,body {
 }
 
 
-.main-content{
-
+.main-content {
+ position:auto;
 }
 
 footer {
@@ -27,14 +40,20 @@ footer {
   background: #333;
   color:#fff;
   vertical-align: middle;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 0px;
+  font-family: 'arcamajora3-bold';
 }
 
 
 a {
     text-decoration: none;
     color: white;
+}
+
+.loading {
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 .loading span {
@@ -111,6 +130,7 @@ div.stop-dragging
     background-color: var(--background-color);
     padding: 8px 12px;
     margin: 0px 0px 0px 0px;
+    font-family: 'arcamajora3-bold';
 }
 
 .navbar_logo {
@@ -122,6 +142,14 @@ div.stop-dragging
     display: flex;
     list-style: none;
     padding-left: 0;
+}
+
+.navbar_menu :hover {
+  -moz-transition:color .3s ease;   
+  -o-transition:color .3s ease;   
+  -ms-transition:color .3s ease;   
+  -webkit-transition:color .3s ease;   
+  transition: background-color .3s ease;
 }
 
 .navbar_menu li {
@@ -139,7 +167,12 @@ div.stop-dragging
     color: white;
     display: flex;
     padding-left: 0;
-
+    color: white;
+    -moz-transition:color .2s ease-out;   
+    -o-transition:color .2s ease-out;   
+    -ms-transition:color .2s ease-out;   
+    -webkit-transition:color .2s ease-out;   
+    transition:color .2s ease-out;
 }
 
 .navbar_icons li {
@@ -163,26 +196,11 @@ div.stop-dragging
     color: white;
 }
 
-.footercopyright {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-	  padding: 15px 0;
-    text-align: center;
-}
-
-.mainhomdepage {
-    background-color: #242424;
-    width: auto;
-    height: 600px;
-}
 
 .discordwidget {
     width: auto;
     height: 100%;
+    margin-bottom: 50px;
 }
 
 .introducevideo {
@@ -192,6 +210,7 @@ div.stop-dragging
 .members {
   display: flex;
   color: white;
+  margin-bottom: 600px;
 }
 
 .membersicons {
@@ -211,10 +230,49 @@ div.stop-dragging
     display: flex;
     align-items: center;
     padding-left: 370px;
+    margin-bottom: 350px;
 }
 
 .projectul {
   align-items: center;
+}
+
+.projectdownload {
+  display: inline-block;
+  position: relative;
+  color: white;
+  -moz-transition:color .2s ease-out;   
+  -o-transition:color .2s ease-out;   
+  -ms-transition:color .2s ease-out;   
+  -webkit-transition:color .2s ease-out;   
+  transition:color .2s ease-out;
+}
+
+.projectdownload::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.projectdownload:hover {
+  color: #0087ca;
+  -moz-transition:color .2s ease;   
+  -o-transition:color .2s ease;   
+  -ms-transition:color .2s ease;   
+  -webkit-transition:color .2s ease;   
+  transition:color .2s ease;
+}
+
+.projectdownload:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .aboutlineswitch {
@@ -223,10 +281,34 @@ div.stop-dragging
   color: var(--text-color);
 }
 
+.abouten {
+  font-family: 'arcamajora3-bold';
+}
+
+.aboutkr {
+  font-family: 'Noto Sans KR';
+}
+
+.aboutjp{
+  font-family: 'Noto Sans KR';
+}
+
+.contacthover {
+  margin-bottom: 200px;
+}
+
+.contacthover2 {
+  margin-bottom: 200px;
+  font-family: 'arcamajora3-bold';
+  background-color: #535352;
+  border-radius: 10px;
+}
+
 .contacthover :hover{
   background-color: white;
   color: black;
   border-radius: 10px;
+  font-family: 'arcamajora3-bold';
 }
 
 
