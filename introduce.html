@@ -12,41 +12,49 @@
     </script>
     <script src="main.js" defer>
     </script>
+    <script>
+        document.body.scrollIntoView(true);
+        parent.document.all.aaa.height = document.body.scrollHeight;
+    </script>
     <title>
         INTRODUCE | LINE SWITCH ENT
     </title>
 </head>
-<body>
-    <div>
-        <nav class="navbar">
-            <div class="navbar_logo">
-                <img src="images/lslogo_white.png" alt="LINE SWITCH ENT" width="50" height="50">
-            </div>
-
-            <ul class="navbar_menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="introduce.html">Introduce</a></li>
-                <li><a href="members.html">Members</a></li>
-                <li><a href="projectfile.html">Project File</a></li>
-                <li><a href="about.html">About</a></li>
-
-            </ul>
-
-            <ul class="navbar_icons">
-                <li><a href="https://www.instagram.com/lineswitch_ent/" target="_black"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com/lineswitchofficial/" target="_black"><i class="fab fa-facebook-f"></i></a></li>
-            </ul>
-
-            <a href="#" class="navbar_togglebtn">
-                <i class="fas fa-bars"></i>
-            </a>
-        </nav>
-
+<body bgcolor='#242424'>
+    <header>
         <div>
-            <iframe width="1486" height="590" src="https://www.youtube.com/embed/Es6twyn6p9M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <nav class="navbar">
+                <div class="navbar_logo">
+                    <center>
+                    <img src="images/lslogo_white.png" alt="LINE SWITCH ENT" width="50" height="50">
+                    </center>
+                </div>
+
+                <ul class="navbar_menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="introduce.html">Introduce</a></li>
+                    <li><a href="members.html">Members</a></li>
+                    <li><a href="projectfile.html">Project File</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+
+                <ul class="navbar_icons">
+                    <li><a href="https://www.instagram.com/lineswitch_ent/" target="_black"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/lineswitchofficial/" target="_black"><i class="fab fa-facebook-f"></i></a></li>
+                </ul>
+
+                <a href="#" class="navbar_togglebtn">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+        <div class="introducevideo">
+            <iframe id=aaa width="1486" height="590" src="https://www.youtube.com/embed/Es6twyn6p9M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class='stop-dragging'>
-            <footer class="footercopyright">
+            <footer class="footer">
                     © 2020. LINE SWITCH ENT All rights reserved
             </footer>
         </div>
