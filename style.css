@@ -27,6 +27,8 @@ footer {
   background: #333;
   color:#fff;
   vertical-align: middle;
+  padding-top: 20px;
+  padding-bottom: 0px;
 }
 
 
@@ -204,7 +206,6 @@ div.stop-dragging
 }
 
 .projecthome {
-    background-color: #242424;
     align-items: center;
     user-select: none;
     display: flex;
