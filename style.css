@@ -256,13 +256,13 @@ div.stop-dragging
   height: 5px;
   bottom: 0;
   left: 0;
-  background-color: #0087ca;
+  background-color: #FDD300;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
 
 .projectdownload:hover {
-  color: #0087ca;
+  color: #FDD300;
   -moz-transition:color .2s ease;   
   -o-transition:color .2s ease;   
   -ms-transition:color .2s ease;   
