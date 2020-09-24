@@ -5,10 +5,30 @@
 }
 
 
-body {
+html,body {
     margin: 0;
     font-family: 'Noto Sans KR';
+    padding:0;
+    height:100%;
+    width:100%; height:100%;
 }
+
+.wrapper{
+  display: flex; min-height: auto; flex-direction: column;
+}
+
+
+.main-content{
+
+}
+
+footer {
+  height:60px;
+  background: #333;
+  color:#fff;
+  vertical-align: middle;
+}
+
 
 a {
     text-decoration: none;
@@ -148,11 +168,11 @@ div.stop-dragging
     left: 0;
     bottom: 0;
     width: 100%;
-	padding: 15px 0;
+	  padding: 15px 0;
     text-align: center;
 }
 
-.mainhomepage {
+.mainhomdepage {
     background-color: #242424;
     width: auto;
     height: 600px;
@@ -172,11 +192,28 @@ div.stop-dragging
   color: white;
 }
 
+.membersicons {
+  display: flex;
+  padding-left: 0px;
+}
+
+.membersiconsli {
+  display: flex;
+  padding-left: 0px;
+  padding: 8px 12px;
+}
+
 .projecthome {
     background-color: #242424;
     align-items: center;
     user-select: none;
     display: flex;
+    align-items: center;
+    padding-left: 370px;
+}
+
+.projectul {
+  align-items: center;
 }
 
 .aboutlineswitch {
@@ -190,6 +227,7 @@ div.stop-dragging
   color: black;
   border-radius: 10px;
 }
+
 
 @media screen and (max-width: 768px) {
     .navbar {
