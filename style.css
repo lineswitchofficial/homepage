@@ -203,6 +203,13 @@ div.stop-dragging
 }
 
 
+.mainvideos {
+  margin-top: 250px;
+  margin-bottom: 400px;
+  padding-left: 12vw;
+  align-items: center;
+}
+
 .discordwidget {
     width: auto;
     height: 100%;
