@@ -211,10 +211,14 @@ div.stop-dragging
   text-align: center;
 }
 
+.discordwidgetarticle {
+  align-items: right;
+}
+
 .discordwidget {
     width: auto;
-    height: 100%;
-    margin-bottom: 50px;
+    height: 550px;
+    margin-right: 0.5vw;
 }
 
 .introducevideo {
