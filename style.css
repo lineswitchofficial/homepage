@@ -204,9 +204,11 @@ div.stop-dragging
 
 
 .mainvideos {
-  margin-bottom: 200px;
+  margin-bottom: 5px;
+}
+
+.ibox {
   text-align: center;
-  align-items: center;
 }
 
 .discordwidget {
