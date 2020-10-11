@@ -37,7 +37,7 @@ html,body {
 
 footer {
   height:60px;
-  background: #333;
+  background: #1f1f1f;
   color:#fff;
   vertical-align: middle;
   padding-top: 40px;
@@ -127,22 +127,24 @@ div.stop-dragging
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--background-color);
+    background-color: #1F1F1F;
     padding: 8px 12px;
     margin: 0px 0px 0px 0px;
     font-family: 'arcamajora3-bold';
+    box-shadow: 0px 10px 30px 0px #1F1F1F;
 }
 
 .navbar_logo {
     font-size: 24px;
     color: var(--text-color);
+    margin-left: 20px;
 }
 
 .navbar_menu{
     display: flex;
     list-style: none;
     padding-left: 0;
-    background-color: var(--background-color);
+    background-color: #1f1f1f;
     -moz-transition:background-color .3s ease-out;   
     -o-transition:background-color .3s ease-out;   
     -ms-transition:background-color .3s ease-out;   
@@ -209,6 +211,12 @@ div.stop-dragging
 
 .ibox {
   text-align: center;
+  margin-top: -10px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  color: white;
+  background-color: #222222;
+  box-shadow: 0px 10px 50px 0px black;
 }
 
 .discordwidgetarticle {
@@ -219,6 +227,39 @@ div.stop-dragging
     width: auto;
     height: 550px;
     margin-right: 0.5vw;
+}
+
+.SNS {
+  margin-top: 100px;
+  list-style: none;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.SNSyodutube {
+  background-color: black;
+  color: white;
+  -moz-transition:color .3s ease-out;   
+  -o-transition:color .3s ease-out;   
+  -ms-transition:color .3s ease-out;   
+  -webkit-transition:color .3s ease-out;   
+  transition: color .3s ease-out;
+}
+
+.SNSyoustube :hover {
+  color: black;
+  background-color: white;
+  -moz-transition:color .3s ease;   
+  -o-transition:color .3s ease;   
+  -ms-transition:color .3s ease;   
+  -webkit-transition:color .3s ease;   
+  transition: color .3s ease;
+  -moz-transition: background-color .3s ease;   
+  -o-transition: background-color .3s ease;   
+  -ms-transition: background-color .3s ease;   
+  -webkit-transition: background-color .3s ease;   
+  transition: background-color .3s ease;
 }
 
 .introducevideo {
