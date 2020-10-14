@@ -47,8 +47,8 @@ footer {
 
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .loading {
@@ -145,29 +145,28 @@ div.stop-dragging
     list-style: none;
     padding-left: 0;
     background-color: #1f1f1f;
-    -moz-transition:background-color .3s ease-out;   
-    -o-transition:background-color .3s ease-out;   
-    -ms-transition:background-color .3s ease-out;   
-    -webkit-transition:background-color .3s ease-out;   
-    transition: background-color .3s ease-out;
-}
-
-.navbar_menu :hover {
-  -moz-transition:background-color .3s ease;   
-  -o-transition:background-color .3s ease;   
-  -ms-transition:background-color .3s ease;   
-  -webkit-transition:background-color .3s ease;   
-  transition: background-color .3s ease;
+    
 }
 
 .navbar_menu li {
     padding: 8px 12px;
+    border-radius: 20px;
+    color: white;
+  -moz-transition:color .3s ease-out;   
+  -o-transition:color .3s ease-out;   
+  -ms-transition:color .3s ease-out;   
+  -webkit-transition:color .3s ease-out;   
+  transition:color .3s ease-out;
 }
 
 .navbar_menu li:hover {
     background-color: black;
     border-radius: 20px;
-    
+    -moz-transition:background-color .3s ease;   
+  -o-transition:background-color .3s ease;   
+  -ms-transition:background-color .3s ease;   
+  -webkit-transition:background-color .3s ease;   
+  transition: background-color .3s ease;
 }
 
 .navbar_icons {
