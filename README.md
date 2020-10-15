@@ -1,1 +1,1 @@
-© 2020. LINE SWITCH ENT All rights reserved.
+© 2020. LINE SWITCH ENT All rights reserved
