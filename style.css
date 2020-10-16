@@ -236,6 +236,7 @@ div.stop-dragging
   display: flex;
   text-align: center;
   align-items: center;
+  font-family: 'arcamajora3-bold';
 }
 
 .SNSyodutube {
@@ -270,7 +271,8 @@ div.stop-dragging
 .members {
   display: flex;
   color: white;
-  margin-bottom: 600px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .membersicons {
