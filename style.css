@@ -275,6 +275,20 @@ div.stop-dragging
   margin-bottom: 50px;
 }
 
+.memberil {
+  display: flex;
+}
+
+.memberi {
+  margin-top: 15px;
+}
+
+.memberimg {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
 .membersicons {
   display: flex;
   padding-left: 0px;
