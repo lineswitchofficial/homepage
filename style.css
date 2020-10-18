@@ -492,6 +492,7 @@ div.stop-dragging
     }
 
     .navbar_togglebtn {
+        margin-top: 15px;
         display: block;
     }
 
