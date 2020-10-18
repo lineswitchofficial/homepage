@@ -237,9 +237,10 @@ div.stop-dragging
   font-family: 'arcamajora3-bold';
 }
 
-.SNSyodutube {
-  background-color: black;
-  color: white;
+.SNSyoutube {
+  color:black;
+  align-items: center;
+  text-align: center;
   -moz-transition:color .3s ease-out;   
   -o-transition:color .3s ease-out;   
   -ms-transition:color .3s ease-out;   
@@ -247,9 +248,25 @@ div.stop-dragging
   transition: color .3s ease-out;
 }
 
-.SNSyoustube :hover {
+.SNSyoutubeli {
+  margin-right: 30px;
+}
+
+.SNSyoutubetxt {
+  margin-top: 20px;
+}
+
+#parallelogram {
+  width: 150px;
+  height: 100px;
+  transform: skew(-15deg);
+  border-radius: 5px;
+  background: white;
+}
+
+.SNSyoutube :hover {
   color: black;
-  background-color: white;
+  background-color: red;
   -moz-transition:color .3s ease;   
   -o-transition:color .3s ease;   
   -ms-transition:color .3s ease;   
@@ -271,6 +288,7 @@ div.stop-dragging
   color: white;
   margin-top: 50px;
   margin-bottom: 50px;
+  margin-left: -0.7vw;
 }
 
 .memberil {
