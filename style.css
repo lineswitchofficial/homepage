@@ -58,6 +58,7 @@ a {
 .loading {
   margin-top: 200px;
   margin-bottom: 200px;
+  font-family: 'arcamajora3-heavy';
 }
 
 .loading span {
