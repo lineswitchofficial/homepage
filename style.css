@@ -566,6 +566,8 @@ div.stop-dragging
 /*팝업*/
 .popupdiv {
   display: flex;
+  height: 100%;
+  width: 100%;
 }
 
 .popuptitle {
@@ -615,7 +617,7 @@ hr.popupcontenthr {
 }
 
 .popupshortcut :hover {
-  background-color: rgb(185, 185, 185);
+  background-color: rgb(231, 231, 231);
   color: black;
   text-align: left;
   font-size: 1.5vw;
