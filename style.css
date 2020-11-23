@@ -9,9 +9,18 @@
   src: url(fonts/ArcaMajora3-Heavy.otf) format('opentype');
 }
 
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
-body {
-  font-family: "Noto Sans KR", sans-serif !important;
+@font-face {
+  font-family: 'silgothic';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/silgothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'S-CoreDream-2ExtraLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*HTML 기본 스타일*/
@@ -56,7 +65,7 @@ footer {
   color:#fff;
   vertical-align: middle;
   padding-top: 40px;
-  padding-bottom: 0px;
+  padding-bottom: 30px;
   font-family: 'Montserrat';
   font-weight: bolder;
   letter-spacing: -0.5px;
@@ -586,13 +595,40 @@ div.stop-dragging
   background-color: rgb(24, 24, 24);
 }
 
+.popuptitlekr {
+  font-family: 'S-CoreDream-2ExtraLight';
+  width: 18vw;
+  height: 100%;
+  padding-right: 10vw; 
+  padding-top: 100px;
+  text-align: left;
+  writing-mode: tb-rl;
+  align-items: center;
+  color: white;
+  font-size: 70px;
+  letter-spacing: -20px;
+  background-color: rgb(24, 24, 24);
+}
+
 .popupcontent {
   font-family: 'Montserrat';
   margin-top: 3%;
   margin-left: 7%;
 }
 
+.popupcontentkr {
+  font-family: 'S-CoreDream-2ExtraLight';
+  margin-top: 3%;
+  margin-left: 7%;
+}
+
+.langsel {
+  color: black;
+  margin-top: 20px;
+}
+
 .pcontent {
+  margin-bottom: -0.5px;
   color: black;
   font-size: 50px;
   font-weight: "";
@@ -625,6 +661,32 @@ hr.shortcuthr {
 }
 
 .popupshortcut :hover {
+  background-color: rgb(231, 231, 231);
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  -moz-transition:background-color .5s ease;   
+  -o-transition:background-color .5s ease;   
+  -ms-transition:background-color .5s ease;   
+  -webkit-transition:background-color .5s ease;   
+  transition: background-color .5s ease;
+}
+
+.popupshortcutkr {
+  width: 60%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40px;
+  -moz-transition:background-color .5s ease-out;   
+  -o-transition:background-color .5s ease-out;   
+  -ms-transition:background-color .5s ease-out;   
+  -webkit-transition:background-color .5s ease-out;   
+  transition: background-color .5s ease-out;
+}
+
+.popupshortcutkr :hover {
   background-color: rgb(231, 231, 231);
   color: black;
   text-align: center;
