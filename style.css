@@ -603,29 +603,36 @@ hr.popupcontenthr {
   margin-left: 0px;
 }
 
+hr.shortcuthr {
+  width: 500px;
+  text-align: left;
+  margin-left: 0px;
+}
+
 .popupshortcut {
   width: 47%;
   background-color: black;
   color: white;
-  text-align: left;
-  font-size: 1.5vw;
-  -moz-transition: background-color,color .5s ease-out;   
-  -o-transition: background-color,color .5s ease-out;   
-  -ms-transition: background-color,color .5s ease-out;   
-  -webkit-transition: background-color,color .5s ease-out;   
-  transition: background-color,color .5s ease-out;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 40px;
+  -moz-transition:background-color .5s ease-out;   
+  -o-transition:background-color .5s ease-out;   
+  -ms-transition:background-color .5s ease-out;   
+  -webkit-transition:background-color .5s ease-out;   
+  transition: background-color .5s ease-out;
 }
 
 .popupshortcut :hover {
   background-color: rgb(231, 231, 231);
   color: black;
-  text-align: left;
-  font-size: 1.5vw;
-  -moz-transition:background-color,color .5s ease;   
-  -o-transition:background-color,color .5s ease;   
-  -ms-transition:background-color,color .5s ease;   
-  -webkit-transition:background-color,color .5s ease;   
-  transition: background-color,color .5s ease;
+  text-align: center;
+  font-size: 20px;
+  -moz-transition:background-color .5s ease;   
+  -o-transition:background-color .5s ease;   
+  -ms-transition:background-color .5s ease;   
+  -webkit-transition:background-color .5s ease;   
+  transition: background-color .5s ease;
 }
 
 .shorcutcontent {
