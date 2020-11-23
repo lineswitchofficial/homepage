@@ -9,6 +9,10 @@
   src: url(fonts/ArcaMajora3-Heavy.otf) format('opentype');
 }
 
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+body {
+  font-family: "Noto Sans KR", sans-serif !important;
+}
 
 /*HTML 기본 스타일*/
 html {
@@ -149,6 +153,28 @@ div.stop-dragging
     box-shadow: 0px 10px 30px 0px #1F1F1F;
 }
 
+.navbarpopup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  margin: 0px 0px 0px 0px;
+  font-family: 'arcamajora3-bold';
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+  height: 75px;
+  padding: 1rem;
+  color: auto;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .navbar_logo {
     font-size: 24px;
     color: var(--text-color);
@@ -156,17 +182,16 @@ div.stop-dragging
 }
 
 .navbar_menu{
-    display: flex;
-    list-style: none;
-    padding-left: 0;
-    background-color: #1f1f1f;
-    
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  background-color: #1f1f1f;    
 }
 
 .navbar_menu li {
-    padding: 8px 12px;
-    border-radius: 20px;
-    color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  color: white;
   -moz-transition:color .3s ease-out;   
   -o-transition:color .3s ease-out;   
   -ms-transition:color .3s ease-out;   
@@ -175,8 +200,8 @@ div.stop-dragging
 }
 
 .navbar_menu li:hover {
-    background-color: black;
-    border-radius: 20px;
+  background-color: black;
+  border-radius: 20px;
   -moz-transition:background-color .3s ease;   
   -o-transition:background-color .3s ease;   
   -ms-transition:background-color .3s ease;   
@@ -185,20 +210,41 @@ div.stop-dragging
 }
 
 .navbar_icons {
-    list-style: none;
-    color: white;
-    display: flex;
-    padding-left: 0;
-    color: white;
-    -moz-transition:color .2s ease-out;   
-    -o-transition:color .2s ease-out;   
-    -ms-transition:color .2s ease-out;   
-    -webkit-transition:color .2s ease-out;   
-    transition:color .2s ease-out;
+  list-style: none;
+  color: white;
+  display: flex;
+  padding-left: 0;
+  color: white;
+  -moz-transition:color .2s ease-out;   
+  -o-transition:color .2s ease-out;   
+  -ms-transition:color .2s ease-out;   
+  -webkit-transition:color .2s ease-out;   
+  transition:color .2s ease-out;
+}
+
+.navbar_iconspopup {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  color: black;
+  filter: invert(100%);
+}
+
+.navbar_iconspopup li {
+  padding: 8px 12px;
+}
+
+.navbar_iconspopup :hover {
+  filter: invert(50%);
+  -moz-transition:color .2s ease;   
+  -o-transition:color .2s ease;   
+  -ms-transition:color .2s ease;   
+  -webkit-transition:color .2s ease;   
+  transition:color .2s ease;
 }
 
 .navbar_icons li {
-    padding: 8px 12px;
+  padding: 8px 12px;
 }
 
 .navbar_icons :hover {
@@ -211,11 +257,11 @@ div.stop-dragging
 }
 
 .navbar_togglebtn {
-    display: none;
-    position: absolute;
-    right: 32px;
-    font-size: 24px;
-    color: white;
+  display: none;
+  position: absolute;
+  right: 32px;
+  font-size: 24px;
+  color: white;
 }
 
 
@@ -238,9 +284,9 @@ div.stop-dragging
 }
 
 .discordwidget {
-    width: auto;
-    height: 550px;
-    margin-right: 0.5vw;
+  width: auto;
+  height: 550px;
+  margin-right: 0.5vw;
 }
 
 
@@ -298,7 +344,7 @@ div.stop-dragging
 
 /*Introduce 섹션*/
 .introducevideo {
-    position: absolute;
+  position: absolute;
 }
 
 /*Members 섹션*/
@@ -518,32 +564,77 @@ div.stop-dragging
 
 
 /*팝업*/
+.popupdiv {
+  display: flex;
+}
+
 .popuptitle {
   font-family: 'Montserrat';
-  width: 15vw;
+  width: 18vw;
   height: 100%;
-  padding-top: 10px;
-  padding-left: 10vw;  
-  text-align: center;
-  vertical-align: middle;
-  writing-mode: vertical-lr;
-  text-orientation: upright;
+  padding-right: 10vw; 
+  padding-top: 100px;
+  text-align: left;
+  writing-mode: tb-rl;
+  align-items: center;
   color: white;
-  font-size: 20px;
-  letter-spacing: 5px;
+  font-size: 90px;
+  letter-spacing: -5px;
   background-color: rgb(24, 24, 24);
 }
 
+.popupcontent {
+  font-family: 'Montserrat';
+  margin-top: 3%;
+  margin-left: 7%;
+}
+
+.pcontent {
+  color: black;
+  font-size: 50px;
+  font-weight: "";
+}
+
+hr.popupcontenthr {
+  width: 500px;
+  text-align: left;
+  margin-left: 0px;
+}
+
+.popupshortcut {
+  width: 47%;
+  background-color: black;
+  color: white;
+  text-align: left;
+  font-size: 1.5vw;
+  -moz-transition: background-color,color .5s ease-out;   
+  -o-transition: background-color,color .5s ease-out;   
+  -ms-transition: background-color,color .5s ease-out;   
+  -webkit-transition: background-color,color .5s ease-out;   
+  transition: background-color,color .5s ease-out;
+}
+
+.popupshortcut :hover {
+  background-color: rgb(185, 185, 185);
+  color: black;
+  text-align: left;
+  font-size: 1.5vw;
+  -moz-transition:background-color,color .5s ease;   
+  -o-transition:background-color,color .5s ease;   
+  -ms-transition:background-color,color .5s ease;   
+  -webkit-transition:background-color,color .5s ease;   
+  transition: background-color,color .5s ease;
+}
+
+.shorcutcontent {
+  padding: 10px;
+}
 
 /*페이지 공지*/
 .pageannounce {
   text-align: center;
 }
 
-.popupcontent {
-  font-family: 'arcamajora3-bold';
-  writing-mode: lr-tb;
-}
 
 .pageannounce {
   background-color: white;
@@ -610,5 +701,15 @@ div.stop-dragging
         display: flex;
     }
 
+    .popupdiv {
+      flex-direction: column;
+    }
+    
+    .popuptitle {
+      writing-mode: lr-tb;
+      width: 100%;
+      text-align: center;
+      vertical-align: middle;
+    }
 
 }
