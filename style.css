@@ -566,7 +566,6 @@ div.stop-dragging
 /*팝업*/
 .popupdiv {
   display: flex;
-  height: 100%;
   width: 100%;
 }
 
