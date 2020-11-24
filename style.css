@@ -806,6 +806,7 @@ hr.shortcuthr {
     
     .popuptitle {
       writing-mode: lr-tb;
+      padding-top:70px;
       width: 100%;
       text-align: center;
       vertical-align: middle;
@@ -813,6 +814,8 @@ hr.shortcuthr {
 
     .popuptitlekr {
       writing-mode: lr-tb;
+      padding-top: 70px;
+      padding-bottom: 70px;
       width: 100%;
       text-align: center;
       vertical-align: middle;
