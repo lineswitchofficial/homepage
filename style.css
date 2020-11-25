@@ -443,6 +443,7 @@ div.stop-dragging
   -o-transform: scale(1.02);
   -moz-transform: scale(1.02);
   transform: scale(1.02);
+  opacity: 90%;
   transition: .2s ease;
 }
 
