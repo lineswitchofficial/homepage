@@ -645,10 +645,27 @@ div.stop-dragging
   margin-left: 7%;
 }
 
-.popupcontentkr {
-  font-family: 'S-CoreDream-2ExtraLight';
-  margin-top: 3%;
-  margin-left: 7%;
+.popuptitleaboutus {
+  font-family: 'Montserrat';
+  width: 18vw;
+  height: 100%;
+  padding-right: 10vw; 
+  padding-left: 5vw;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: left;
+  writing-mode: tb-rl;
+  align-items: center;
+  color: white;
+  font-size: 90px;
+  letter-spacing: -5px;
+  background-color: rgb(24, 24, 24);
+}
+
+.popupaboutus {
+  font-family: 'Montserrat';
+  width: 100%;
+  color: white;
 }
 
 .langsel {
@@ -663,13 +680,13 @@ div.stop-dragging
 }
 
 hr.popupcontenthr {
-  width: 500px;
+  width: 33vw;
   text-align: left;
   margin-left: 0px;
 }
 
 hr.shortcuthr {
-  width: 500px;
+  width: 33vw;
   text-align: left;
   margin-left: 0px;
 }
@@ -821,5 +838,9 @@ hr.shortcuthr {
       text-align: center;
       vertical-align: middle;
       letter-spacing: -7px;
+    }
+
+    .projectinfo {
+      text-align: left;
     }
 }
