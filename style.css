@@ -619,7 +619,7 @@ div.stop-dragging
   writing-mode: tb-rl;
   align-items: center;
   color: white;
-  font-size: 90px;
+  font-size: 110px;
   letter-spacing: -5px;
   background-color: rgb(24, 24, 24);
 }
@@ -826,6 +826,7 @@ hr.shortcuthr {
       writing-mode: lr-tb;
       padding-top:70px;
       width: 100%;
+      font-size: 70px;
       text-align: center;
       vertical-align: middle;
     }
@@ -851,6 +852,6 @@ hr.shortcuthr {
       width: 100%;
       text-align: center;
       vertical-align: middle;
-      font-size: 80px;
+      font-size: 70px;
     }
 }
