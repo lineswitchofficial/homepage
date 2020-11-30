@@ -611,7 +611,7 @@ div.stop-dragging
 .popuptitle {
   font-family: 'Montserrat';
   width: 18vw;
-  height: 100%;
+  height: auto;
   padding-right: 10vw; 
   padding-top: 100px;
   padding-bottom: 100px;
@@ -627,7 +627,7 @@ div.stop-dragging
 .popuptitlekr {
   font-family: 'S-CoreDream-2ExtraLight';
   width: 18vw;
-  height: 100%;
+  height: auto;
   padding-right: 10vw; 
   padding-top: 100px;
   text-align: left;
@@ -643,6 +643,7 @@ div.stop-dragging
   font-family: 'Montserrat';
   margin-top: 7%;
   margin-left: 7%;
+  margin-bottom: 250px;
 }
 
 .popuptitleaboutus {
@@ -843,6 +844,7 @@ hr.shortcuthr {
 
     .projectinfo {
       text-align: left;
+      width: 312px;
     }
 
     .popuptitleaboutus {
