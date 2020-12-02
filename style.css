@@ -30,6 +30,8 @@ html {
   -moz-overflow-scrolling: touch;   
   -o-overflow-scrolling: touch;   
   -ms-overflow-scrolling: touch;
+  overflow: auto;
+  position: relative;
 }
 :lang(ko) {font-family: 'S-CoreDream-2ExtraLight';}
 :lang(en) {font-family: 'Montserrat';}
@@ -63,7 +65,7 @@ html,body {
 
 footer {
   height:60px;
-  background: #1f1f1f;
+  background: black;
   color:#fff;
   vertical-align: middle;
   padding-top: 40px;
@@ -302,64 +304,6 @@ div.stop-dragging
   margin-right: 0.5vw;
 }
 
-
-/*Home 섹션 하단 SNS*/
-.SNS {
-  margin-top: 100px;
-  list-style: none;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  font-family: 'arcamajora3-bold';
-}
-
-.SNSyoutube {
-  color:black;
-  align-items: center;
-  text-align: center;
-  -moz-transition:color .3s ease-out;   
-  -o-transition:color .3s ease-out;   
-  -ms-transition:color .3s ease-out;   
-  -webkit-transition:color .3s ease-out;   
-  transition: color .3s ease-out;
-}
-
-.SNSyoutubeli {
-  margin-right: 30px;
-}
-
-.SNSyoutubetxt {
-  margin-top: 20px;
-}
-
-#parallelogram {
-  width: 150px;
-  height: 100px;
-  transform: skew(-15deg);
-  border-radius: 5px;
-  background: white;
-}
-
-.SNSyoutube :hover {
-  color: black;
-  background-color: red;
-  -moz-transition:color .3s ease;   
-  -o-transition:color .3s ease;   
-  -ms-transition:color .3s ease;   
-  -webkit-transition:color .3s ease;   
-  transition: color .3s ease;
-  -moz-transition: background-color .3s ease;   
-  -o-transition: background-color .3s ease;   
-  -ms-transition: background-color .3s ease;   
-  -webkit-transition: background-color .3s ease;   
-  transition: background-color .3s ease;
-}
-
-/*Introduce 섹션*/
-.introducevideo {
-  position: absolute;
-}
-
 /*Members 섹션*/
 .members {
   display: flex;
@@ -367,10 +311,6 @@ div.stop-dragging
   margin-top: 50px;
   margin-bottom: 50px;
   margin-left: -0.7vw;
-}
-
-.memberil {
-  display: flex;
 }
 
 .memberi {
@@ -394,35 +334,15 @@ div.stop-dragging
   padding: 8px 12px;
 }
 
-.membersns {
-  color: white;
-  -moz-transition:color .2s ease-out;   
-  -o-transition:color .2s ease-out;   
-  -ms-transition:color .2s ease-out;   
-  -webkit-transition:color .2s ease-out;   
-  transition:color .2s ease-out;
-  -moz-transition:transform .2s ease-out;   
-  -o-transition:transform .2s ease-out;   
-  -ms-transition:transform .2s ease-out;   
-  -webkit-transition:transform .2s ease-out;   
-  transition:transform .2s ease-out;
+.memberul {
+  margin-top: -20px;
+  margin-left: -40px;
+  margin-bottom: 40px;
 }
 
-.membersns :hover {
-  color: #FDD300;
-  transform: scale(1.5);
-  margin-left: 10px;
-  margin-right: 10px;
-  -moz-transition:color .2s ease;   
-  -o-transition:color .2s ease;   
-  -ms-transition:color .2s ease;   
-  -webkit-transition:color .2s ease;   
-  transition:color .2s ease;
-  -moz-transition:transform .2s ease;   
-  -o-transition:transform .2s ease;   
-  -ms-transition:transform .2s ease;   
-  -webkit-transition:transform .2s ease;   
-  transition:transform .2s ease;
+.memberil {
+  display: flex;
+  list-style: none;
 }
 
 
@@ -602,7 +522,7 @@ div.stop-dragging
 }
 
 
-/*팝업*/
+/*메인페이지*/
 .popupdiv {
   display: flex;
   width: 100%;
@@ -681,7 +601,7 @@ div.stop-dragging
 }
 
 hr.popupcontenthr {
-  width: 33vw;
+  width: 40vw;
   text-align: left;
   margin-left: 0px;
 }
@@ -690,58 +610,6 @@ hr.shortcuthr {
   width: 33vw;
   text-align: left;
   margin-left: 0px;
-}
-
-.popupshortcut {
-  width: 47%;
-  background-color: black;
-  color: white;
-  text-align: center;
-  font-size: 20px;
-  margin-top: 40px;
-  -moz-transition:background-color .5s ease-out;   
-  -o-transition:background-color .5s ease-out;   
-  -ms-transition:background-color .5s ease-out;   
-  -webkit-transition:background-color .5s ease-out;   
-  transition: background-color .5s ease-out;
-}
-
-.popupshortcut :hover {
-  background-color: rgb(231, 231, 231);
-  color: black;
-  text-align: center;
-  font-size: 20px;
-  -moz-transition:background-color .5s ease;   
-  -o-transition:background-color .5s ease;   
-  -ms-transition:background-color .5s ease;   
-  -webkit-transition:background-color .5s ease;   
-  transition: background-color .5s ease;
-}
-
-.popupshortcutkr {
-  width: 60%;
-  background-color: black;
-  color: white;
-  text-align: center;
-  font-size: 20px;
-  margin-top: 40px;
-  -moz-transition:background-color .5s ease-out;   
-  -o-transition:background-color .5s ease-out;   
-  -ms-transition:background-color .5s ease-out;   
-  -webkit-transition:background-color .5s ease-out;   
-  transition: background-color .5s ease-out;
-}
-
-.popupshortcutkr :hover {
-  background-color: rgb(231, 231, 231);
-  color: black;
-  text-align: center;
-  font-size: 20px;
-  -moz-transition:background-color .5s ease;   
-  -o-transition:background-color .5s ease;   
-  -ms-transition:background-color .5s ease;   
-  -webkit-transition:background-color .5s ease;   
-  transition: background-color .5s ease;
 }
 
 .shorcutcontent {
@@ -856,4 +724,121 @@ hr.shortcuthr {
       vertical-align: middle;
       font-size: 70px;
     }
+}
+
+
+/* 효과 */
+/* Fade */
+.hvr-fade {
+  width: 47%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  background-color: rgb(231, 231, 231);
+  color: black;
+}
+
+/* Sweep To Right */
+.hvr-sweep-to-right {
+  color: black;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #1d1d1d;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: rgb(255, 255, 255);
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Icon Forward */
+.hvr-icon-forward {
+  display: none;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+.hvr-icon-forward .hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-icon-forward:hover .hvr-icon, .hvr-icon-forward:focus .hvr-icon, .hvr-icon-forward:active .hvr-icon {
+  -webkit-transform: translateX(4px);
+  transform: translateX(4px);
+}
+
+/* Grow */
+.hvr-grow {
+  color: black;
+  font-size: 20px;
+  margin-right: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  opacity: 80%;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
