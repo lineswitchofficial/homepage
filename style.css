@@ -241,7 +241,6 @@ div.stop-dragging
   list-style: none;
   display: flex;
   padding-left: 0;
-  color: black;
   filter: invert(100%);
 }
 
