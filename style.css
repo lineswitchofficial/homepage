@@ -614,6 +614,12 @@ hr.shortcuthr {
   padding: 10px;
 }
 
+.arrow {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  text-align: center;
+}
+
 
 /* 뉴스 페이지 */
 .newstitle {
@@ -745,6 +751,10 @@ hr.shortcuthr {
       vertical-align: middle;
     }
 
+    .popupcontent {
+      width: 100%
+    }
+
     .popuptitlekr {
       writing-mode: lr-tb;
       padding-top: 70px;
@@ -767,7 +777,11 @@ hr.shortcuthr {
       width: 100%;
       text-align: center;
       vertical-align: middle;
-      font-size: 70px;
+      font-size: 50px;
+    }
+
+    .popupaboutus {
+      width: 100%
     }
 }
 
