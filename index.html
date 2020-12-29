@@ -17,7 +17,25 @@
         </script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+        <script type="text/javascript" src="/Example.Modal.js"></script>
+        <script type="text/javascript">
+        // 모달창 인스턴트 생성
+        var myModal = new Example.Modal({
+            id: "modal" // 모달창 아이디 지정
+        });
+  
+        // 모달 창 여는 버튼에 이벤트 걸기
+        $("#button").click(function() {
+            myModal.show(); // 모달창 보여주기
+        });
+  
+        // 모달 창 안에 있는 확인 버튼에 이벤트 걸기
+        $("#confirm_button").click(function() {
+            alert("나는 모달창이다.");
+            myModal.hide(); // 모달창 감추기
+        });
+        </script>
     </head>
 
     <body class="body">
@@ -47,12 +65,12 @@
             <div class="popupcontent">
                 <p class="pcontent" sytle="font-weight: bolder;">Details</p></br>
                 <hr class="popupcontenthr">
-                <p style="font-size: 25px;">2020 / 11 / 25 ~ 2020 / 12</p>
+                <p style="font-size: 25px;">2020 / 11 / 25 ~ 2021 / 01</p>
                 <p style="font-size: 20px;">- Change the overall design of the "LINE SWITCH ENT" official page.</p>
                 <p style="font-size: 20px;">- All pages except the "Project File" page will stop being activated.</p>
                 <p style="font-size: 20px;">- For more information, please refer to the news below,</br>which will be updated if you have additional information.</p>
                 </br>
-                <hr class="shortcuthr">
+                </br>
                 <div class="popupshortcut">
                     <a href="/news/list.html">
                         <p class="hvr-fade">Go to the news page</p>
@@ -61,7 +79,7 @@
             </div>
         </div>
 
-        <div class="popupdiv" id="section_title">
+        <div class="popupdiv" id="title">
             <div class="popuptitleaboutus">
                 LINE SWITCH ENT
             </div>
@@ -72,7 +90,7 @@
             </div>
         </div>
 
-        <div class="popupdiv" id="section_news" style="background-color: rgb(0,0,41);">
+        <div class="popupdiv" id="news" style="background-color: rgb(0,0,41);">
             <div class="popuptitle" lang="en" style="background-color: rgb(0, 0, 41);">
                 News
             </div>
@@ -107,7 +125,7 @@
         </div>
 
 
-        <div class="popupdiv" id="section_pf">
+        <div class="popupdiv" id="projectfile">
             <div class="popuptitle" style="background-color: white; color:black;">
                 Project File
             </div>
@@ -126,7 +144,7 @@
             </div>
         </div>
 
-        <div class="popupdiv" id="section_members" style="background-color: rgb(221, 221, 221); color:black;">
+        <div class="popupdiv" id="members" style="background-color: rgb(221, 221, 221); color:black;">
             <div class="popuptitle" style="background-color: rgb(221, 221, 221); color:black;">
                 Members
             </div>
@@ -233,9 +251,49 @@
                 <p style="font-size: 25px; font-weight: 100;" lang="ko">우비보이</p>
             </div>
         </div>
+
+        <div class="popupdiv" id="video" style="background-color:rgb(21, 21, 21); color:white;">
+            <div class="popuptitle" style="background-color:rgb(21, 21, 21); color:white;">
+                Video
+            </div>
+            <div>
+	            <button id="open">
+                    <a class="videosthumb" href="#video"><img src="videos/thumb/2020lsintro.png" style="width:430px;"></a>
+                </button>
+	            <div class="modal hidden">
+		        <div class="md_overlay"></div>
+		        <div class="md_content">
+			        <div class="modal_text">
+				        <iframe width="100%" height="561" src="https://www.youtube.com/embed/PABzMKtWJ_w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			        </div>
+                <button style="font-size: 35px;;">X</button>
+                </div>
+            </div>
+
+	    <script type="text/javascript">
+		//필요한 엘리먼트들을 선택한다.
+		const openButton = document.getElementById("open");
+		const modal = document.querySelector(".modal");
+		const overlay = modal.querySelector(".md_overlay");
+		const closeButton = modal.querySelector("button");
+		//동작함수
+		const openModal = () => {
+			modal.classList.remove("hidden");
+		}
+		const closeModal = () => {
+			modal.classList.add("hidden");
+		}
+		//클릭 이벤트
+		openButton.addEventListener("click", openModal);
+		closeButton.addEventListener("click", closeModal);
+	    //-->
+	    </script>
+        </div>
+    </div>
+
         <a href="#top">
-            <div class="arrow" style="background-color:rgb(21, 21, 21);">
-                <img src="images/arrow_up.png" style="width: 70px;">            
+            <div id="back2top" class="arrow" style="background-color:rgb(21, 21, 21);">
+                <img class="arrowup" src="images/arrow_up.png" style="width: 70px;">            
             </div>
         </a>
 
