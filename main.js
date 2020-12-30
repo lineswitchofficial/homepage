@@ -7,3 +7,8 @@ togglebtn.addEventListener('click', () => {
     icons.classList.toggle('active');
 });
 
+$("#sidebar-toggle").click(function(){
+    $("html").toggleClass("open");
+});
+
+
