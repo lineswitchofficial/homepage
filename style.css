@@ -74,6 +74,53 @@ a {
   color: white;
 }
 
+.blind {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.side_toggle_btn::before {
+  content: "Menu";
+  display: inline-block;
+  width: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.side_input:checked + .side_toggle_btn::before {
+  content: "X";
+}
+
+.side_input:checked ~ .side_list {
+  right: 0;
+}
+
+.side_list {
+  position:absolute;
+  right: -500px;
+  top: 50px;
+  bottom: 0px;
+  border-right: 1px solid #000;
+  width: 200px;
+  font-size: 24px;
+  transition: 0.3s ease-out;
+}
+
+.side_link {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 30px 20px 0px 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 100%;
+}
+
 /*글자 애니메이션*/
 .loading {
   margin-top: 200px;
