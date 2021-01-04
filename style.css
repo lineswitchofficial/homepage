@@ -852,7 +852,7 @@ h1 {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -902,14 +902,14 @@ h1 {
     }
 
     .popupcontent {
-      width: 100%
+      width: 90%
     }
 
     .popuptitlekr {
       writing-mode: lr-tb;
       padding-top: 70px;
       padding-bottom: 70px;
-      width: 100%;
+      width: 90%;
       text-align: center;
       vertical-align: middle;
       letter-spacing: -7px;
@@ -927,7 +927,7 @@ h1 {
       writing-mode: lr-tb;
       padding-top: 70px;
       padding-bottom: 70px;
-      width: 100%;
+      width: 85%;
       text-align: center;
       vertical-align: middle;
       font-size: 50px;
@@ -938,6 +938,7 @@ h1 {
     }
 
     .lpttitlekr {
+      position: relative;
       writing-mode: lr-tb;
       padding-top: 70px;
       padding-bottom: 70px;
@@ -946,6 +947,12 @@ h1 {
       vertical-align: middle;
       font-size: 50px;
     }
+
+    .newscontent {
+      margin-left: 5%;
+      width:90%
+    }
+
 }
 
 /* 효과 */
@@ -1106,58 +1113,6 @@ h1 {
   opacity: 80%;
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
-}
-
-
-
-.main_bsanner {
-  position: relative;
-}
-
-.main_bannesdr .owsl-prev {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 100px;
-  outline: none;
-}
-
-.main_bsanner .owl-presv::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  background-repeat: no-repeat;
-  width: 22px;
-  height: 38px;
-  content: "";
-  margin: auto;
-}
-
-.main_bansner .oswl-next {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  outline: none;
-  width: 100px;
-}
-
-.main_bansner .owls-next::before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-repeat: no-repeat;
-  width: 22px;
-  height: 38px;
-  content: "";
-  margin: auto;
 }
 
 .section1 {
