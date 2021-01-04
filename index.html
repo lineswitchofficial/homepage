@@ -9,7 +9,7 @@
         <meta property="og:description" content="Creative, Challenge, Growth." />
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/style.css">
         <link rel="icon" href="images/shortcuticon/shortcuticon.ico" type="imgae/x-icon" />
         <link rel="shortcut icon" href="/images/shortcuticon/shortcuticon.con" type="imgae/x-icon" />
         <script src="https://kit.fontawesome.com/fd41597021.js"
@@ -36,6 +36,7 @@
             myModal.hide(); // 모달창 감추기
         });
         </script>
+       
     </head>
 
     <body class="body">
@@ -52,6 +53,7 @@
                         <li><a href="https://www.youtube.com/channel/UCt8TQcQpzkVPbTbnh_DDiyA" target="_black"><i class="fab fa-youtube"></i></a></li>
                         <li><a href="https://www.instagram.com/lineswitch_ent/" target="_black"><i class="fab fa-instagram"></i></a></li>
                         <li><a href="https://www.facebook.com/lineswitchofficial/" target="_black"><i class="fab fa-facebook-f"></i></a></li>
+                        <!--
                         <li>
                             <input type="checkbox" id="side_btn" class="side_input blind" />
                             <label for="side_btn" class="side_toggle_btn"></label>
@@ -63,6 +65,7 @@
                                 <a href="#video" class="side_link">Video</a>
                             </div>
                         </li>
+                        -->
                     </ul>
                 </nav>
             </div>
@@ -72,35 +75,56 @@
             <a href="/lptournament/event.html"><img src="/lptournament/lpt_top_banner.png" width=100%></a>
         </div>
 
-        <div class="popupdiv" id="top">
-            <div class="popuptitle" style="letter-spacing: -10px;">
-                Page Renewal
-            </div>
-
-            <div class="popupcontent">
-                <p class="pcontent" sytle="font-weight: bolder;">Details</p></br>
-                <hr class="popupcontenthr">
-                <p style="font-size: 25px;">2020 / 11 / 25 ~ 2021 / 01</p>
-                <p style="font-size: 20px;">- Change the overall design of the "LINE SWITCH ENT" official page.</p>
-                <p style="font-size: 20px;">- All pages except the "Project File" page will stop being activated.</p>
-                <p style="font-size: 20px;">- For more information, please refer to the news below,</br>which will be updated if you have additional information.</p>
-                </br>
-                </br>
-                <div class="popupshortcut">
-                    <a href="/news/list.html">
-                        <p class="hvr-fade">Go to the news page</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-
         <div class="popupdiv" id="title">
             <div class="popuptitleaboutus">
                 LINE SWITCH ENT
             </div>
 
-            <div class="popupaboutus" style="background-color: rgb(24,24,24);">
-                <img src="images/lslogo_3d.png" align="right" style="width: 60%; vertical-align: middle;"">
+            <div class="imgpopupaboutus" style="background-color: black;">
+                <div id="main" class="scroll-container">
+                    <section class="section1">
+                        <div>
+                            <img src="/images/lslogo_3d.png" width="480px;">					
+                        </div>
+                    </section>
+                    <section class="section2">
+                        <div>
+                            <a href="/lptournament/event.html"><img src="/images/banner/lpt_en.png" width="100%"></a>
+                        </div>
+                    </section>
+                    <!--
+                    <section class="section3">
+                        <div>
+                            <img src="/projectfile/thumb/Comingsoon.png">
+                        </div>
+                    </section>
+                    -->
+                </div>
+                <script src="full-page-scroll.js"></script>
+                <script type="text/javascript">
+                    new fullScroll({
+                        displayDots: true,
+                        dotsPosition: 'left',
+                        animateTime: 0.7,
+                        animateFunction: 'ease'
+                    });
+                </script>
+                <ul class="dots dots-left">
+                    <li>
+                        <a href="#0" class>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#1" class>
+                        </a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="#2" class>
+                        </a>
+                    </li>
+                    -->
+                </ul>
                 </div>
             </div>
         </div>
