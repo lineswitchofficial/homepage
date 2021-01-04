@@ -403,7 +403,17 @@ div.stop-dragging
 
 /*Proejct File 섹션*/
 
+.projectthumb {
+  width:100px;
+  height:100px;
+  margin:10px auto;
+  overflow:hidden;
+  border:1px solid black;
+}
+
 .proejctthumb img {
+  width: 350px;
+  height: auto;
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
@@ -413,13 +423,16 @@ div.stop-dragging
 }
 
 .proejctthumb:hover img {
-  -webkit-transform: scale(1.02);
-  -ms-transform: scale(1.02);
-  -o-transform: scale(1.02);
-  -moz-transform: scale(1.02);
-  transform: scale(1.02);
+  cursor:pointer;
+  -webkit-transform:scale(1.03); /*  크롬 */
+  -moz-transform:scale(1.03); /* FireFox */
+  -o-transform:scale(1.03); /* Opera */
+  transform:scale(1.03);
+  transition: transform .35s;
+  -o-transition: transform .35s;
+  -moz-transition: transform .35s;
+  -webkit-transition: transform .35s;
   opacity: 90%;
-  transition: .2s ease;
 }
 
 .projectinfo {
@@ -625,7 +638,7 @@ div.stop-dragging
   font-family: 'Montserrat';
   width: 18vw;
   height: 100%;
-  padding-right: 10vw; 
+  padding-right: 15.65vw; 
   padding-left: 5vw;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -641,6 +654,7 @@ div.stop-dragging
 .popupaboutus {
   font-family: 'Montserrat';
   width: 100%;
+  padding-left: 100px;
   color: white;
 }
 
@@ -787,17 +801,14 @@ h1 {
 }
 
 /*페이지 공지*/
-.pageannounce {
-  text-align: center;
-}
 
 
 .pageannounce {
-  background-color: white;
-  padding:10px;
+  background-color: black;
   font-family: 'arcamajora3-heavy';
   letter-spacing: -0.6px;
 }
+
 
 #close {
   display: right;
@@ -820,6 +831,24 @@ h1 {
   -webkit-transition:opacity .3s ease;   
   transition: opacity .3s ease;
 }
+
+.lpttitlekr {
+  position: fixed;
+  font-family: 'S-CoreDream-2ExtraLight';
+  width: 17%;
+  height: 100%;
+  padding-right: 12vw; 
+  padding-top: 60px;
+  padding-bottom: 100px;
+  text-align: left;
+  writing-mode: tb-rl;
+  align-items: center;
+  color: white;
+  font-size: 60px;
+  letter-spacing: -10px;
+  background-color: rgb(24, 24, 24);
+}
+
 
 @media screen and (max-width: 768px) {
     .navbar {
@@ -888,6 +917,9 @@ h1 {
       text-align: left;
       width: 312px;
     }
+
+
+    
 
     .popuptitleaboutus {
       writing-mode: lr-tb;
@@ -1064,3 +1096,54 @@ h1 {
   transform: scale(1.2);
 }
 
+
+
+.main_bsanner {
+  position: relative;
+}
+
+.main_bannesdr .owsl-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100px;
+  outline: none;
+}
+
+.main_bsanner .owl-presv::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 38px;
+  content: "";
+  margin: auto;
+}
+
+.main_bansner .oswl-next {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  outline: none;
+  width: 100px;
+}
+
+.main_bansner .owls-next::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 38px;
+  content: "";
+  margin: auto;
+}

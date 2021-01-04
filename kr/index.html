@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/style.css">
         <link rel="icon" href="images/shortcuticon/shortcuticon.ico" type="imgae/x-icon" />
-        <link rel="shortcut icon" href="images/shortcuticon/shortcuticon.con" type="imgae/x-icon" />
+        <link rel="shortcut icon" href="/images/shortcuticon/shortcuticon.con" type="imgae/x-icon" />
         <script src="https://kit.fontawesome.com/fd41597021.js"
         crossorigin="anonymous">
         </script>
@@ -22,6 +22,8 @@
         <script src="jquery.smoothwheel.js"></script>
         <meta http-equiv="page-enter" content="blendTrans(duration=0.3)">
         <meta http-equiv="page-exit" content="blendTrans(duration=0.3)">
+        <link rel="stylesheet" href="/owl.carousel.css" />
+        <link rel="stylesheet" href="/owl.theme.default.css" />
     </head>
 
     <body class="body">
@@ -54,6 +56,10 @@
             </div>
         </header>
 
+        <div class="pageannounce">
+            <a href="/lptournament/lptournament.html"><img src="/lptournament/lpt_top_banner.png" width=100%></a>
+        </div>
+
         <div class="popupdiv">
             <div class="popuptitlekr">
                 페이지 &nbsp;리뉴얼
@@ -81,8 +87,20 @@
                 LINE SWITCH ENT
             </div>
 
-            <div class="popupaboutus" style="background-color: rgb(24,24,24);">
-                <img src="/images/lslogo_3d.png" align="right" style="width: 600px; vertical-align: middle;">
+            <div class="popupaboutus" style="background-color: black;">
+                    <div class="owl-carousel owl-theme">
+                            <div class="item first">
+                                <img src="/projectfile/thumb/Example_thumb.png" style="margin-top: 150px">
+                            </div>
+                            <div class="item second">
+                                <img src="/projectfile/thumb/Comingsoon.png" style="margin-top: 150px">
+                            </div>
+                        </div>
+
+                        <script src="/jquery-3.5.1.min.js"></script>
+                        <script src="/owl.carousel.min.js"></script>
+                        <script src="/app.js"></script>
+                    </div>
                 </div>
             </div>
         </div>
@@ -128,7 +146,9 @@
             
             <div class="popupcontent">
                 <p style="font-size: 20px;">런치패드 프로젝트 &nbsp;<img src="/images/new.png" style="width:40px; vertical-align: middle;"></p>
-                <a class="proejctthumb" href="/projectfile/test.txt" target="_black"><img src="/projectfile/thumb/Example_thumb.png" style="width: 350px;"></a>
+                <div class="proejctthumb">
+                    <a href="/projectfile/test.txt" target="_black"><img src="/projectfile/thumb/Example_thumb.png" style="width: 350px;"></a>
+                </div>
                 <p class="projectinfo" style="padding: 3%; text-align: center;" lang="en">Grant & Dylan Matthew - All That I Know</p>
                 </br>
                 </br>
