@@ -24,6 +24,7 @@
         <meta http-equiv="page-exit" content="blendTrans(duration=0.3)">
         <link rel="stylesheet" href="/owl.carousel.css" />
         <link rel="stylesheet" href="/owl.theme.default.css" />
+        <link rel="stylesheet" type="text/css" href="full-page-scroll.css">
     </head>
 
     <body class="body">
@@ -40,7 +41,9 @@
                         <li><a href="https://www.youtube.com/channel/UCt8TQcQpzkVPbTbnh_DDiyA" target="_black"><i class="fab fa-youtube"></i></a></li>
                         <li><a href="https://www.instagram.com/lineswitch_ent/" target="_black"><i class="fab fa-instagram"></i></a></li>
                         <li><a href="https://www.facebook.com/lineswitchofficial/" target="_black"><i class="fab fa-facebook-f"></i></a></li>
-                        <li>
+                        
+                        <!--
+                            <li>
                             <input type="checkbox" id="side_btn" class="side_input blind" />
                             <label for="side_btn" class="side_toggle_btn"></label>
                             <div class="side_list">
@@ -51,35 +54,14 @@
                                 <a href="#video" class="side_link">영상</a>
                             </div>
                         </li>
+                        -->
                     </ul>
                 </nav>
             </div>
         </header>
 
         <div class="pageannounce">
-            <a href="/lptournament/index.html"><img src="/lptournament/lpt_top_banner.png" width=100%></a>
-        </div>
-
-        <div class="popupdiv">
-            <div class="popuptitlekr">
-                페이지 &nbsp;리뉴얼
-            </div>
-
-            <div class="popupcontent">
-                <p class="pcontent">세부 사항</p></br>
-                <hr class="popupcontenthr">
-                <p style="font-size: 25px;">2020 / 11 / 25 ~ 2021 / 01</p>
-                <p style="font-size: 20px;">- "LINE SWITCH ENT" 공식 페이지의 전체 디자인을 변경합니다.</p>
-                <p style="font-size: 20px;">- "Project File" 페이지를 제외한 모든 페이지는 비활성화 됩니다.</p>
-                <p style="font-size: 20px;">- 자세한 사항은 아래 뉴스를 참고해주세요,</br>추가 정보가 있을 경우 업데이트됩니다.</p>
-                </br>
-                <hr class="shortcuthr">
-                <div class="">
-                    <a href="/news/kr/list.html">
-                        <p class="hvr-fade" lang="ko">뉴스 페이지로 이동하기</p>
-                    </a>
-                </div>
-            </div>
+            <a href="/lptournament/event.html"><img src="/lptournament/lpt_top_banner.png" width=100%></a>
         </div>
 
         <div class="popupdiv">
@@ -87,20 +69,51 @@
                 LINE SWITCH ENT
             </div>
 
-            <div class="popupaboutus" style="background-color: black;">
-                    <div class="owl-carousel owl-theme">
-                            <div class="item first">
-                                <img src="/projectfile/thumb/Example_thumb.png" style="margin-top: 150px">
-                            </div>
-                            <div class="item second">
-                                <img src="/projectfile/thumb/Comingsoon.png" style="margin-top: 150px">
-                            </div>
+            <div class="imgpopupaboutus" style="background-color: black;">
+                <div id="main" class="scroll-container">
+                    <section class="section1">
+                        <div>
+                            <img src="/images/lslogo_3d.png" width="480px;">					
                         </div>
-
-                        <script src="/jquery-3.5.1.min.js"></script>
-                        <script src="/owl.carousel.min.js"></script>
-                        <script src="/app.js"></script>
-                    </div>
+                    </section>
+                    <section class="section2">
+                        <div>
+                            <img src="/projectfile/thumb/Example_thumb.png">				
+                        </div>
+                    </section>
+                    <!--
+                    <section class="section3">
+                        <div>
+                            <img src="/projectfile/thumb/Comingsoon.png">				
+                        </div>
+                    </section>
+                    -->
+                </div>
+                <script src="/full-page-scroll.js"></script>
+                <script type="text/javascript">
+                    new fullScroll({
+                        displayDots: true,
+                        dotsPosition: 'left',
+                        animateTime: 0.7,
+                        animateFunction: 'ease'
+                    });
+                </script>
+                <ul class="dots dots-left">
+                    <li>
+                        <a href="#0" class>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#1" class>
+                        </a>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="#2" class>
+                        </a>
+                    </li>
+                    -->
+                </ul>
                 </div>
             </div>
         </div>
