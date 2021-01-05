@@ -1148,14 +1148,14 @@ h1 {
 
 .section2en {
   background-image: url(/images/banner/lpt_en.png);
-  background-size: 75%;
+  background-size: 105%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .section2kr {
   background-image: url(/images/banner/lpt_kr.png);
-  background-size: 100%;
+  background-size: 105%;
   background-repeat: no-repeat;
   background-position: center;
 }
