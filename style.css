@@ -1116,7 +1116,10 @@ h1 {
 }
 
 .section1 {
-  background-color: black;
+  background-image: url(/images/lslogo_3d.png);
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .section2 {
@@ -1136,7 +1139,7 @@ h1 {
 }
     
 section div {
-  font-family: 'Open Sans';
+  font-family: 'Montserrat';
   font-style: normal;
   text-align: center;
   position: relative;
