@@ -403,36 +403,26 @@ div.stop-dragging
 
 /*Proejct File 섹션*/
 
-.projectthumb {
-  width:100px;
-  height:100px;
-  margin:10px auto;
-  overflow:hidden;
-  border:1px solid black;
-}
-
-.proejctthumb img {
-  width: 350px;
-  height: auto;
+.proimg {
+  transform: scale(1);
   -webkit-transform: scale(1);
+  -moz-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
-  -moz-transform: scale(1);
-  transform: scale(1);
-  transition: .2s ease-out;
+  transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
 }
-
-.proejctthumb:hover img {
-  cursor:pointer;
-  -webkit-transform:scale(1.03); /*  크롬 */
-  -moz-transform:scale(1.03); /* FireFox */
-  -o-transform:scale(1.03); /* Opera */
-  transform:scale(1.03);
-  transition: transform .35s;
-  -o-transition: transform .35s;
-  -moz-transition: transform .35s;
-  -webkit-transition: transform .35s;
+.proimg:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
   opacity: 90%;
+}
+.projectthumb {width:350px; height:auto; overflow:hidden }   /* 부모를 벗어나지 않고 내부 이미지만 확대 */
+
+.projectinfodiv {
+  width: 350px;
 }
 
 .projectinfo {
