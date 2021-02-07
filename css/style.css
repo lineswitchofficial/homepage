@@ -6,6 +6,11 @@
   font-style: normal;
 }
 
+::selection {
+  background-color: rgb(63, 63, 63);
+  color: white;
+}
+
 /*HTML 기본 스타일*/
 html {
   scroll-behavior: smooth;
@@ -271,6 +276,9 @@ div.stop-dragging
 .mainvideos {
   margin-bottom: 5px;
 }
+
+
+
 
 /*Members 섹션*/
 
