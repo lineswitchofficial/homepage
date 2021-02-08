@@ -191,7 +191,7 @@ div.stop-dragging
   display: flex;
   list-style: none;
   padding-left: 0;
-  background-color: #1f1f1f;    
+  background-color: #1f1f1f; 
 }
 
 .navbar_menu li {
