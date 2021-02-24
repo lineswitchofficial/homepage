@@ -875,6 +875,11 @@ h1 {
 }
 
 
+.lsvideos {
+  display: flex;
+  list-style: none;
+}
+
 /* 메인 이미지 롤링 배너 */
 .section1 {
   background-image: url(/files/images/lslogo_3d.png);
