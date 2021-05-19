@@ -5,6 +5,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'GmarketSansLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 ::selection {
   background-color: rgb(63, 63, 63);
@@ -308,6 +314,15 @@ div.stop-dragging
 }
 .projectthumb {width:350px; height:auto; overflow:hidden }   /* 부모를 벗어나지 않고 내부 이미지만 확대 */
 
+#projectdiv {
+  display: flex;
+  margin-left: -30px;
+}
+
+.projectindiv {
+  padding-left: 30px;
+}
+
 .projectinfodiv {
   width: 350px;
 }
@@ -586,6 +601,13 @@ h1 {
   font-size: 90px;
   background-color: rgb(24, 24, 24);
 }
+
+/* #news_arrow:hover {
+  transition: 0.7s;
+  transform: translateX(-30px);
+  filter: invert(100%);
+  width: 50px;
+} */
 
 @media screen and (max-width: 768px) {
     .navbar {
