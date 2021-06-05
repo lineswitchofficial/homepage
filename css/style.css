@@ -446,6 +446,15 @@ hr.shortcuthr {
   padding: 10px;
 }
 
+.arrow {
+  width: 100%;
+  background-color:rgb(21, 21, 21);
+}
+
+.arrow div :hover {
+  background-color: rgb(63, 63, 63);
+}
+
 .arrow img {
   width: 100%;
   align-items: center;
@@ -453,10 +462,12 @@ hr.shortcuthr {
   padding-top: 35px;
   padding-bottom: 35px;
   transition: all 0.35s ease-in-out;
+  background-color: none;
 }
 
 .arrow:hover img {
   transform: translateY(-30px);
+  background-color: none;
 }
 
 .snsbox {
