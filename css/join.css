@@ -99,11 +99,9 @@ a:hover {
 @keyframes roll {
   from {
     transform: rotateZ(0deg);
-    filter: brightness(100%);
   }
   to {
     transform: rotateZ(360deg);
-    filter: contrast(200%);
   }
 }
 
@@ -111,7 +109,8 @@ a:hover {
   .joindescript {
     height: 100%;
   }
-  .jointext {
-    padding-top: 100%;
+  .joinbody div img {
+    width: 50px;
+    margin-top: 40px;
   }
 }
