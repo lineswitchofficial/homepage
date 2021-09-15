@@ -53,6 +53,27 @@ p {
   margin: -7px;
 }
 
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.faq {
+  margin-top: 30px;
+}
+
+.faq p {
+  font-family: "GmarketSansLight";
+}
+
 .joinbody {
   width: 100%;
   height: 100%;
@@ -63,8 +84,27 @@ p {
 
 .jointext {
   height: 100%;
-  padding-top: 280px;
-  padding-bottom: -1000px;
+  padding-top: 250px;
+}
+
+.joinbody div img {
+  width: 100px;
+  margin-top: 100px;
+  animation-name: roll;
+  animation-duration: 1.3s;
+  animation-direction: normal;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+@keyframes roll {
+  from {
+    transform: rotateZ(0deg);
+    filter: brightness(100%);
+  }
+  to {
+    transform: rotateZ(360deg);
+    filter: contrast(200%);
+  }
 }
 
 @media screen and (max-width: 768px) {
