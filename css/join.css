@@ -53,17 +53,18 @@ p {
   margin: -7px;
 }
 
-.joindescript {
+.joinbody {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   text-align: center;
   background-image: url(../files/images/discordbg.png);
   background-size: cover;
 }
 
 .jointext {
-  height: 100vh;
+  height: 100%;
   padding-top: 280px;
+  padding-bottom: -1000px;
 }
 
 @media screen and (max-width: 768px) {
