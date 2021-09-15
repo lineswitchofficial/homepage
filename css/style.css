@@ -1,16 +1,20 @@
 /*폰트 설정*/
 @font-face {
-  font-family: 'S-CoreDream-2ExtraLight';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+  font-family: "S-CoreDream-2ExtraLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'GmarketSansLight';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-family: "GmarketSansLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700;900&display=swap");
 
 ::selection {
   background-color: rgb(63, 63, 63);
@@ -21,58 +25,62 @@
 html {
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  -moz-overflow-scrolling: touch;   
-  -o-overflow-scrolling: touch;   
+  -moz-overflow-scrolling: touch;
+  -o-overflow-scrolling: touch;
   -ms-overflow-scrolling: touch;
   overflow: auto;
   position: relative;
 }
-:lang(ko) {font-family: 'S-CoreDream-2ExtraLight';}
-:lang(en) {font-family: 'Montserrat';}
+:lang(ko) {
+  font-family: "S-CoreDream-2ExtraLight";
+}
+:lang(en) {
+  font-family: "Montserrat";
+}
 
 :root {
-    --text-color: white;
-    --background-color: #323232;
-    --hover-color: black;
+  --text-color: white;
+  --background-color: #323232;
+  --hover-color: black;
 }
 
 #body {
   height: 100%;
 }
 
-html,body {
-    margin: 0;
-    padding:0;
-    height:100%;
-    width:100%; height:100%;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .homebody {
-  font-family: 'arcamajora3-heavy';
+  font-family: "arcamajora3-heavy";
 }
 
-.wrapper{
-  display: flex; min-height: auto; flex-direction: column;
+.wrapper {
+  display: flex;
+  min-height: auto;
+  flex-direction: column;
 }
-
 
 .main-content {
- position:auto;
+  position: auto;
 }
 
-
 footer {
-  height:60px;
+  height: 60px;
   background: black;
-  color:#fff;
+  color: #fff;
   vertical-align: middle;
   padding-top: 40px;
   padding-bottom: 30px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: bolder;
   letter-spacing: -0.5px;
 }
-
 
 a {
   text-decoration: none;
@@ -97,7 +105,7 @@ a {
   font-size: 24px;
   text-align: center;
   color: white;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   margin-right: -28px;
   margin-top: -17px;
   padding-top: 21px;
@@ -115,7 +123,7 @@ a {
 }
 
 .side_list {
-  position:absolute;
+  position: absolute;
   right: -500px;
   top: 50px;
   bottom: 0px;
@@ -135,18 +143,16 @@ a {
   border-left: 1px solid #000;
   opacity: 100%;
   filter: invert(0%);
-  
 }
 
 .side_link:hover {
   filter: invert(100%);
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
 
 /*드래그 금지*/
-div.stop-dragging
-{
-  -ms-user-select: none; 
+div.stop-dragging {
+  -ms-user-select: none;
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
@@ -155,14 +161,14 @@ div.stop-dragging
 
 /*네비게이션 바*/
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1F1F1F;
-    padding: 8px 12px;
-    margin: 0px 0px 0px 0px;
-    font-family: 'arcamajora3-bold';
-    box-shadow: 0px 10px 30px 0px #1F1F1F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f1f1f;
+  padding: 8px 12px;
+  margin: 0px 0px 0px 0px;
+  font-family: "arcamajora3-bold";
+  box-shadow: 0px 10px 30px 0px #1f1f1f;
 }
 
 .navbarpopup {
@@ -171,13 +177,13 @@ div.stop-dragging
   align-items: center;
   padding: 8px 12px;
   margin: 0px 0px 0px 0px;
-  font-family: 'arcamajora3-bold';
+  font-family: "arcamajora3-bold";
 
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  
+
   height: 75px;
   padding: 1rem;
   color: auto;
@@ -193,32 +199,32 @@ div.stop-dragging
   margin-left: 20px;
 }
 
-.navbar_menu{
+.navbar_menu {
   display: flex;
   list-style: none;
   padding-left: 0;
-  background-color: #1f1f1f; 
+  background-color: #1f1f1f;
 }
 
 .navbar_menu li {
   padding: 8px 12px;
   border-radius: 20px;
   color: white;
-  -moz-transition:color .3s ease-out;   
-  -o-transition:color .3s ease-out;   
-  -ms-transition:color .3s ease-out;   
-  -webkit-transition:color .3s ease-out;   
-  transition:color .3s ease-out;
+  -moz-transition: color 0.3s ease-out;
+  -o-transition: color 0.3s ease-out;
+  -ms-transition: color 0.3s ease-out;
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
 }
 
 .navbar_menu li:hover {
   background-color: black;
   border-radius: 20px;
-  -moz-transition:background-color .3s ease;   
-  -o-transition:background-color .3s ease;   
-  -ms-transition:background-color .3s ease;   
-  -webkit-transition:background-color .3s ease;   
-  transition: background-color .3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .navbar_icons {
@@ -226,11 +232,11 @@ div.stop-dragging
   display: flex;
   padding-left: 0;
   filter: invert(50%);
-  -moz-transition:color .2s ease-out;   
-  -o-transition:color .2s ease-out;   
-  -ms-transition:color .2s ease-out;   
-  -webkit-transition:color .2s ease-out;   
-  transition:color .2s ease-out;
+  -moz-transition: color 0.2s ease-out;
+  -o-transition: color 0.2s ease-out;
+  -ms-transition: color 0.2s ease-out;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
 }
 
 .navbar_iconspopup {
@@ -246,11 +252,11 @@ div.stop-dragging
 }
 
 .navbar_iconspopup :hover {
-  -moz-transition:color .2s ease;   
-  -o-transition:color .2s ease;   
-  -ms-transition:color .2s ease;   
-  -webkit-transition:color .2s ease;   
-  transition:color .2s ease;
+  -moz-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .navbar_icons li {
@@ -258,12 +264,12 @@ div.stop-dragging
 }
 
 .navbar_icons :hover {
-  color: #FDD300;
-  -moz-transition:color .2s ease;   
-  -o-transition:color .2s ease;   
-  -ms-transition:color .2s ease;   
-  -webkit-transition:color .2s ease;   
-  transition:color .2s ease;
+  color: #fdd300;
+  -moz-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  -ms-transition: color 0.2s ease;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .navbar_togglebtn {
@@ -274,7 +280,6 @@ div.stop-dragging
   color: white;
 }
 
-
 .main-content-members {
   display: flex;
 }
@@ -282,9 +287,6 @@ div.stop-dragging
 .mainvideos {
   margin-bottom: 5px;
 }
-
-
-
 
 /*Members 섹션*/
 
@@ -294,7 +296,6 @@ div.stop-dragging
   margin-bottom: 40px;
 }
 
-
 /*Proejct File 섹션*/
 .proimg {
   transform: scale(1);
@@ -302,7 +303,7 @@ div.stop-dragging
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
-  transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+  transition: all 0.3s ease-in-out; /* 부드러운 모션을 위해 추가*/
 }
 .proimg:hover {
   transform: scale(1.1);
@@ -312,7 +313,11 @@ div.stop-dragging
   -o-transform: scale(1.1);
   opacity: 90%;
 }
-.projectthumb {width:350px; height:auto; overflow:hidden }   /* 부모를 벗어나지 않고 내부 이미지만 확대 */
+.projectthumb {
+  width: 350px;
+  height: auto;
+  overflow: hidden;
+} /* 부모를 벗어나지 않고 내부 이미지만 확대 */
 
 #projectdiv {
   display: flex;
@@ -333,22 +338,6 @@ div.stop-dragging
   color: white;
 }
 
-/*Join 페이지*/
-.joindescript {
-  margin-top: 250px;
-  margin-bottom: 250px;
-  text-align: center;
-}
-
-.joinbody {
-  margin: 0;
-  padding:0;
-  height:100%;
-  width:100%; height:100%;
-  background-image: url('images/discordbg.png');
-}
-
-
 /*메인페이지*/
 .popupdiv {
   display: flex;
@@ -356,10 +345,10 @@ div.stop-dragging
 }
 
 .popuptitle {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   width: 18vw;
   height: auto;
-  padding-right: 10vw; 
+  padding-right: 10vw;
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: left;
@@ -372,10 +361,10 @@ div.stop-dragging
 }
 
 .popuptitlekr {
-  font-family: 'S-CoreDream-2ExtraLight';
+  font-family: "S-CoreDream-2ExtraLight";
   width: 18vw;
   height: auto;
-  padding-right: 10vw; 
+  padding-right: 10vw;
   padding-top: 100px;
   text-align: left;
   writing-mode: tb-rl;
@@ -387,17 +376,17 @@ div.stop-dragging
 }
 
 .popupcontent {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   margin-top: 7%;
   margin-left: 7%;
   margin-bottom: 250px;
 }
 
 .popuptitleaboutus {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   width: 18vw;
   height: 100%;
-  padding-right: 10vw; 
+  padding-right: 10vw;
   padding-left: 5vw;
   padding-top: 100px;
   padding-bottom: 300px;
@@ -408,12 +397,11 @@ div.stop-dragging
   font-size: 100px;
   letter-spacing: -5px;
   white-space: nowrap;
-  background-color: black
-  /*rgb(24, 24, 24)*/;
+  background-color: black /*rgb(24, 24, 24)*/;
 }
 
 .popupaboutus {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   width: 100%;
   padding-left: 100px;
   color: white;
@@ -448,7 +436,7 @@ hr.shortcuthr {
 
 .arrow {
   width: 100%;
-  background-color:rgb(21, 21, 21);
+  background-color: rgb(21, 21, 21);
 }
 
 .arrow div :hover {
@@ -491,7 +479,6 @@ hr.shortcuthr {
   display: flex;
   list-style: none;
   font-size: 30px;
-  
 }
 
 .snsicon li {
@@ -500,34 +487,37 @@ hr.shortcuthr {
 }
 
 #modal {
-  display:none;
-  background-color:#FFFFFF;
-  position:absolute;
-  top:300px;
-  left:200px;
-  padding:10px;
-  border:2px solid #E2E2E2;
-  z-Index:9999
+  display: none;
+  background-color: #ffffff;
+  position: absolute;
+  top: 300px;
+  left: 200px;
+  padding: 10px;
+  border: 2px solid #e2e2e2;
+  z-index: 9999;
 }
 
-button{
+button {
   all: unset;
   color: white;
   padding: 0px;
   border-radius: 6px;
   cursor: pointer;
 }
-.modal{
+.modal {
   position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  align-items : center;
+  align-items: center;
 }
 .md_overlay {
   background-color: rgba(0, 0, 0, 0.6);
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   position: absolute;
 }
 .md_content {
@@ -537,16 +527,18 @@ button{
   background-color: rgb(24, 24, 24);
   text-align: center;
   border-radius: 6px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.20), 0 6px 6px rgba(0, 0, 0, 0.20);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.2);
 }
 h1 {
-  margin:0; 
+  margin: 0;
   padding: 5px;
 }
 .hidden {
   display: none;
 }
-.modal_text { padding: 20px; }
+.modal_text {
+  padding: 20px;
+}
 
 #open {
   padding-top: 20%;
@@ -554,21 +546,21 @@ h1 {
 }
 
 .videosthumb img {
-  transition: .2s ease-out;
+  transition: 0.2s ease-out;
 }
 
 .videosthumb:hover img {
   filter: brightness(170%);
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
 
 /* 뉴스 페이지 */
 .newstitle {
   position: fixed;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   width: 20%;
   height: 100%;
-  padding-right: 10vw; 
+  padding-right: 10vw;
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: left;
@@ -582,10 +574,10 @@ h1 {
 
 .newstitlekr {
   position: fixed;
-  font-family: 'S-CoreDream-2ExtraLight';
+  font-family: "S-CoreDream-2ExtraLight";
   width: 20%;
   height: 100%;
-  padding-right: 10vw; 
+  padding-right: 10vw;
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: left;
@@ -597,7 +589,7 @@ h1 {
   background-color: rgb(24, 24, 24);
 }
 .newscontent {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   margin-top: 7%;
   margin-left: 35%;
   margin-bottom: 250px;
@@ -611,10 +603,10 @@ h1 {
 /* 런치패드 토너먼트 */
 .lpttitlekr {
   position: fixed;
-  font-family: 'S-CoreDream-2ExtraLight';
+  font-family: "S-CoreDream-2ExtraLight";
   width: 17%;
   height: 100%;
-  padding-right: 12vw; 
+  padding-right: 12vw;
   padding-top: 60px;
   padding-bottom: 100px;
   text-align: left;
@@ -629,10 +621,10 @@ h1 {
 /*about*/
 .aboutttitle {
   position: fixed;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   width: 17%;
   height: 100%;
-  padding-right: 12vw; 
+  padding-right: 12vw;
   padding-top: 60px;
   padding-bottom: 100px;
   text-align: left;
@@ -643,138 +635,134 @@ h1 {
   background-color: rgb(24, 24, 24);
 }
 
-/* #news_arrow:hover {
-  transition: 0.7s;
-  transform: translateX(-30px);
-  filter: invert(100%);
-  width: 50px;
-} */
+.joindescript {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-image: url(../files/images/discordbg.png);
+  background-size: contain;
+}
 
 @media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 8px 24px;
-    }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
 
-    .navbar_menu {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
+  .navbar_menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 
-    .navbar_menu li {
-        width: 100%;
-        text-align: center;
-    }
+  .navbar_menu li {
+    width: 100%;
+    text-align: center;
+  }
 
+  .navbar_icons {
+    display: none;
+    justify-content: center;
+    width: 100%;
+  }
 
-    .navbar_icons {
-        display: none;
-        justify-content: center;
-        width: 100%
-    }
+  .navbar_togglebtn {
+    margin-top: 15px;
+    display: block;
+  }
 
-    .navbar_togglebtn {
-        margin-top: 15px;
-        display: block;
-    }
+  .navbar_menu.active,
+  .navbar_icons.active {
+    display: flex;
+  }
 
-    .navbar_menu.active,
-    .navbar_icons.active {
-        display: flex;
-    }
+  .popupdiv {
+    flex-direction: column;
+  }
 
-    .popupdiv {
-      flex-direction: column;
-    }
-    
-    .popuptitle {
-      writing-mode: lr-tb;
-      padding-top:70px;
-      width: 100%;
-      font-size: 70px;
-      text-align: center;
-      vertical-align: middle;
-    }
+  .popuptitle {
+    writing-mode: lr-tb;
+    padding-top: 70px;
+    width: 100%;
+    font-size: 70px;
+    text-align: center;
+    vertical-align: middle;
+  }
 
-    .popupcontent {
-      width: 90%
-    }
+  .popupcontent {
+    width: 90%;
+  }
 
-    .popuptitlekr {
-      writing-mode: lr-tb;
-      padding-top: 70px;
-      padding-bottom: 70px;
-      width: 90%;
-      text-align: center;
-      vertical-align: middle;
-      letter-spacing: -7px;
-    }
+  .popuptitlekr {
+    writing-mode: lr-tb;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: 90%;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: -7px;
+  }
 
-    .projectinfo {
-      text-align: left;
-      width: 312px;
-    }
+  .projectinfo {
+    text-align: left;
+    width: 312px;
+  }
 
+  .popuptitleaboutus {
+    writing-mode: lr-tb;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: 85%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 50px;
+  }
 
-    
+  .popupaboutus {
+    width: 100%;
+  }
 
-    .popuptitleaboutus {
-      writing-mode: lr-tb;
-      padding-top: 70px;
-      padding-bottom: 70px;
-      width: 85%;
-      text-align: center;
-      vertical-align: middle;
-      font-size: 50px;
-    }
+  .lpttitlekr {
+    position: relative;
+    writing-mode: lr-tb;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 50px;
+  }
 
-    .popupaboutus {
-      width: 100%
-    }
+  .newstitle {
+    position: relative;
+    writing-mode: lr-tb;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 0;
+    font-size: 50px;
+  }
 
-    .lpttitlekr {
-      position: relative;
-      writing-mode: lr-tb;
-      padding-top: 70px;
-      padding-bottom: 70px;
-      width: 100%;
-      text-align: center;
-      vertical-align: middle;
-      font-size: 50px;
-    }
+  .newstitlekr {
+    position: relative;
+    writing-mode: lr-tb;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: 0;
+    font-size: 50px;
+  }
 
-    .newstitle {
-      position: relative;
-      writing-mode: lr-tb;
-      padding-top: 70px;
-      padding-bottom: 70px;
-      width: 100%;
-      text-align: center;
-      vertical-align: middle;
-      letter-spacing: 0;
-      font-size: 50px;
-    }
-
-    .newstitlekr {
-      position: relative;
-      writing-mode: lr-tb;
-      padding-top: 70px;
-      padding-bottom: 70px;
-      width: 100%;
-      text-align: center;
-      vertical-align: middle;
-      letter-spacing: 0;
-      font-size: 50px;
-    }
-
-    .newscontent {
-      margin-left: 5%;
-      width:90%
-    }
-
+  .newscontent {
+    margin-left: 5%;
+    width: 90%;
+  }
 }
 
 /* 효과 */
@@ -799,7 +787,9 @@ h1 {
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
 }
-.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+.hvr-fade:hover,
+.hvr-fade:focus,
+.hvr-fade:active {
   background-color: rgb(231, 231, 231);
   color: black;
 }
@@ -839,10 +829,14 @@ h1 {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+.hvr-sweep-to-right:hover,
+.hvr-sweep-to-right:focus,
+.hvr-sweep-to-right:active {
   color: rgb(255, 255, 255);
 }
-.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+.hvr-sweep-to-right:hover:before,
+.hvr-sweep-to-right:focus:before,
+.hvr-sweep-to-right:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
@@ -882,14 +876,17 @@ h1 {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-sweep-to-right-news:hover, .hvr-sweep-to-right-news:focus, .hvr-sweep-to-right-news:active {
-  color: rgb(0, 0, 0)
+.hvr-sweep-to-right-news:hover,
+.hvr-sweep-to-right-news:focus,
+.hvr-sweep-to-right-news:active {
+  color: rgb(0, 0, 0);
 }
-.hvr-sweep-to-right-news:hover:before, .hvr-sweep-to-right-news:focus:before, .hvr-sweep-to-right-news:active:before {
+.hvr-sweep-to-right-news:hover:before,
+.hvr-sweep-to-right-news:focus:before,
+.hvr-sweep-to-right-news:active:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-
 
 /* Icon Forward */
 .hvr-icon-forward {
@@ -911,7 +908,9 @@ h1 {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-icon-forward:hover .hvr-icon, .hvr-icon-forward:focus .hvr-icon, .hvr-icon-forward:active .hvr-icon {
+.hvr-icon-forward:hover .hvr-icon,
+.hvr-icon-forward:focus .hvr-icon,
+.hvr-icon-forward:active .hvr-icon {
   -webkit-transform: translateX(4px);
   transform: translateX(4px);
 }
@@ -931,12 +930,13 @@ h1 {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
   opacity: 80%;
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
-
 
 .lsvideos {
   display: flex;
@@ -966,90 +966,111 @@ h1 {
 }
 
 .section3 {
-  background-color:  black;
+  background-color: black;
 }
 
 .section4 {
-  background-color:  #CC938E;
+  background-color: #cc938e;
 }
 
 .section5 {
-  background-color:  #D2C598;
+  background-color: #d2c598;
 }
-    
+
 section div {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   text-align: center;
   position: relative;
-  top: 50%;  
+  top: 50%;
   transform: translateY(-50%);
 }
 
-.scroll-container,.scroll-container section,body,html{
-  width:100%;
+.scroll-container,
+.scroll-container section,
+body,
+html {
+  width: 100%;
   height: 100%;
 }
-body,html{margin:0;padding:0;}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
 .imgpopupaboutus {
-  overflow:hidden;
-  font-family: 'Montserrat';
+  overflow: hidden;
+  font-family: "Montserrat";
   width: 100%;
   padding-left: 0px;
   color: white;
 }
-.scroll-container{
-  position:relative;
-  margin:0;padding:0
+.scroll-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
-.dots{
-  z-index:1;
-  list-style:none;
-  padding:0;
-  position:absolute;
-  top:50%;
-  -webkit-transform:translateY(-50%);
-  -moz-transform:translateY(-50%);
-  -o-transform:translateY(-50%);
-  -ms-transform:translateY(-50%);
-  transform:translateY(-50%)
+.dots {
+  z-index: 1;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-.dots li a{
-  padding:10px;
-  width:4px;
-  height:5px;
-  display:block;
+.dots li a {
+  padding: 10px;
+  width: 4px;
+  height: 5px;
+  display: block;
 }
 
-.dots li a:before{
-  content:'';
-  position:absolute;
-  width:8px;
-  height:8px;
-  background:rgba(255,255,255,.48);-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;-webkit-transition:-webkit-transform .3s ease,background-color .3s ease;-moz-transition:-moz-transform .3s ease,background-color .3s ease;-ms-transition:-ms-transform .3s ease,background-color .3s ease;-o-transition:-o-transform .3s ease,background-color .3s ease;transition:transform .3s ease,background-color .3s ease}
+.dots li a:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.48);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: -webkit-transform 0.3s ease, background-color 0.3s ease;
+  -moz-transition: -moz-transform 0.3s ease, background-color 0.3s ease;
+  -ms-transition: -ms-transform 0.3s ease, background-color 0.3s ease;
+  -o-transition: -o-transform 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
 
-.dots li a.active:before{
-  content:'';
-  width:14px;
-  height:14px;
-  margin-top:-4px;
-  left:7px;
-  background-color:#fff;
-  -webkit-transform:scale(1);
-  -moz-transform:scale(1);
-  -ms-transform:scale(1);
-  -o-transform:scale(1);
-  transform:scale(1)}
-  .dots-right{left:25px}
-  .dots-left{right:10px}
-
+.dots li a.active:before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  margin-top: -4px;
+  left: 7px;
+  background-color: #fff;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.dots-right {
+  left: 25px;
+}
+.dots-left {
+  right: 10px;
+}
 
 span {
   font-size: 4em;
   font-style: normal;
   color: #fff;
 }
-
-
