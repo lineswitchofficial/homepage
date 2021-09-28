@@ -20,6 +20,13 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700;900&display=swap");
 
@@ -109,20 +116,14 @@ a {
   display: inline-block;
   width: 100px;
   line-height: 50px;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.6);
-  margin-right: -28px;
-  margin-top: -17px;
-  padding-top: 21px;
-  padding-bottom: 21px;
-  padding-left: 50px;
-  padding-right: 50px;
+  margin: -17px -28px 0 0;
+  padding: 21px 50px 21px 50px;
 }
 
 .side_input:checked + .side_toggle_btn::before {
-  content: "X";
+  content: "Close";
 }
 
 .side_input:checked ~ .side_list {
@@ -134,11 +135,12 @@ a {
   right: -500px;
   top: 50px;
   bottom: 0px;
-  border-right: 1px solid #000;
+
   width: 200px;
-  font-size: 24px;
-  transition: 0.3s ease-out;
+  font-size: 15px;
+  transition: 0.3s ease-in-out;
   margin-top: 42px;
+  filter: invert(100%);
 }
 
 .side_link {
@@ -146,15 +148,15 @@ a {
   text-align: center;
   width: 100%;
   padding: 30px 0px 30px 0px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-left: 1px solid #000;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  border-left: 1px solid rgb(204, 202, 111);
   opacity: 100%;
-  filter: invert(0%);
+  transition: 0.5s ease-in-out all;
 }
 
 .side_link:hover {
   filter: invert(100%);
-  transition: 0.2s ease;
+  transition: 0.5s ease-in-out all;
 }
 
 /*드래그 금지*/
@@ -616,7 +618,6 @@ h1 {
 
 .faqindex {
   width: 100%;
-  border: 1px solid #fff;
 }
 
 @media screen and (max-width: 768px) {
