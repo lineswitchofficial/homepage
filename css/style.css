@@ -633,8 +633,9 @@ h1 {
 
 .searchbox {
   width: 70%;
-  font-size: 20px;
-  padding: 5px;
+  font-size: 15px;
+  padding: 10px;
+  letter-spacing: -1px;
 }
 .container {
   height: 20vh;
@@ -655,7 +656,6 @@ h1 {
 }
 .name {
   font-size: 17px;
-  font-weight: 470;
   color: black;
   font-family: "GmarketSansMedium";
 }
